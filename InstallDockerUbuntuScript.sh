@@ -28,9 +28,9 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 
 # b. Install the latest version of Docker, or go to the next step to install a specific version. Any existing installation of Docker is replaced.
-sudo apt-get install docker-ce
-sudo apt-get install docker.io 
-sudo apt-get install docker
+sudo apt-get install -y docker-ce
+sudo apt-get install -y docker.io 
+sudo apt-get install -y docker
 
 # 6. Add me to the docker group
 # a. Create a docker group
