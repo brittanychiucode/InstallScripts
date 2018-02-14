@@ -16,10 +16,10 @@ sudo apt-get update
 
 # 4. Set up Docker repository
 # a. Install packages to allow apt to use a repository over HTTPS:
-sudo apt-get install -y apt-transport-https 
-sudo apt-get install -y ca-certificates 
-sudo apt-get install -y curl 
-sudo apt-get install -y software-properties-common
+# sudo apt-get install -y apt-transport-https 
+# sudo apt-get install -y ca-certificates 
+# sudo apt-get install -y curl 
+# sudo apt-get install -y software-properties-common
 
 # 2. Update system
 sudo apt-get update
