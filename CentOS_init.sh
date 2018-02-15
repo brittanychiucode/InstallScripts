@@ -17,6 +17,11 @@ sudo yum -y install git
 sudo yum -y install python
 sudo yum -y install python3
 
+# Install pip
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+rm get-pip.py
+
 # Install Ansible
 sudo yum -y install epel-release
 sudo yum -y install ansible
