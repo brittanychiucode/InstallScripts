@@ -13,6 +13,9 @@ sudo yum -y install vim
 # Install git
 sudo yum -y install git
 
+# Update the system
+sudo yum update
+
 # Install python
 sudo yum -y install python
 sudo yum -y install python3
@@ -25,3 +28,7 @@ rm get-pip.py
 # Install Ansible
 sudo yum -y install epel-release
 sudo yum -y install ansible
+
+# Install Docker
+sudo yum -y install Docker
+sudo service docker start 
