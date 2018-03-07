@@ -39,3 +39,10 @@ sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible
+
+# Install NGINX
+sudo apt-get update
+sudo apt-get -y install nginx
+# sudo ufw app list
+sudo ufw allow 'Nginx HTTP'
+# sudo ufw status
