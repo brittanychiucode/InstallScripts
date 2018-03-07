@@ -43,6 +43,11 @@ sudo apt-get install ansible
 # Install NGINX
 sudo apt-get update
 sudo apt-get -y install nginx
-# sudo ufw app list
+sudo ufw app list
 sudo ufw allow 'Nginx HTTP'
-# sudo ufw status
+sudo ufw status
+
+# Install Node.js
+sudo apt-get update
+sudo apt-get install nodejs
+nodejs -v
