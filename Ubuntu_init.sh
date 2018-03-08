@@ -38,7 +38,7 @@ sudo apt-get update
 sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
-sudo apt-get install ansible
+sudo apt-get -y install ansible
 
 # Install NGINX
 sudo apt-get update
@@ -49,5 +49,6 @@ sudo ufw status
 
 # Install Node.js
 sudo apt-get update
-sudo apt-get install nodejs
+sudo apt-get -y install nodejs
+sudo apt-get -y install npm
 nodejs -v
