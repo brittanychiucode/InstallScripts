@@ -16,7 +16,7 @@ sudo apt-get -y install python3
 
 # Install pip
 wget https://bootstrap.pypa.io/get-pip.py
-python get-pip.py
+sudo python get-pip.py
 rm get-pip.py
 
 # Install docker
@@ -30,8 +30,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get install -y docker-ce
 sudo groupadd docker
-sudo usermod -aG docker $USER
-sudo apt-get update
+sudo gpasswd -a $USER docker
+newgrp docker
 
 # Install Ansible
 sudo apt-get update
