@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tmux new -s kafka2 \; \
+tmux new -s kafka8 \; \
   new-window -n host-server \; \
   new-window -n docker-producer \; \
   new-window -n host-consumer
