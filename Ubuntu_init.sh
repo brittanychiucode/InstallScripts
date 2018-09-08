@@ -16,7 +16,7 @@ sudo apt-get -y install python3
 
 # Install pip
 wget https://bootstrap.pypa.io/get-pip.py
-python get-pip.py
+sudo python get-pip.py
 rm get-pip.py
 
 # Install docker
@@ -30,8 +30,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get install -y docker-ce
 sudo groupadd docker
-sudo usermod -aG docker $USER
-sudo apt-get update
+sudo gpasswd -a $USER docker
+newgrp docker
 
 # Install Ansible
 sudo apt-get update
@@ -54,8 +54,5 @@ sudo apt-get -y install npm
 nodejs -v
 
 # Install MongoDB
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
-sudo service mongod start
+sudo apt update
+sudo apt install -y mongodb

@@ -23,5 +23,8 @@ sudo mkdir /var/lib/kafka/data
 sudo chown -R kafka:nogroup /opt/kafka
 sudo chown -R kafka:nogroup /var/lib/kafka
 
+# Install kafka-python
+sudo pip install kafka-python
+
 # Start the Kafka server 
 sudo /opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
