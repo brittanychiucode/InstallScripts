@@ -17,7 +17,6 @@ sudo yum -y install git
 sudo yum update
 
 # Install python
-sudo yum -y install python
 sudo yum -y install python3
 
 # Install pip
@@ -26,8 +25,8 @@ python get-pip.py
 rm get-pip.py
 
 # Install Ansible
-sudo yum -y install epel-release
-sudo yum -y install ansible
+# sudo yum -y install epel-release
+# sudo yum -y install ansible
 
 # Install Docker
 sudo yum remove docker \
@@ -48,10 +47,10 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker
 sudo docker run hello-world
 
-# Install Docker Compose 
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+# Install Docker Compose [built in docker now]
+# sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# sudo chmod +x /usr/local/bin/docker-compose
+# sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 
 
